@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salimos?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars-bg" id="stars-bg"></div>
+    <div class="container" id="ask-screen">
+        <h1 id="main-title">salimos este finde?</h1>
+        <p id="main-sub">Podemos salir a caminar o lo que sea</p>
+        <div class="gif-container">
+            <img id="cat-gif" src="https://valeveig.github.io/cita/sticker_1.webp" alt="gatito">
+        </div>
+        <div class="buttons">
+            <button id="yes-btn" onclick="handleYes()">obvio</button>
+            <button id="no-btn" onclick="handleNo()">no se...</button>
+        </div>
+        <div id="tease-toast"></div>
+    </div>
+
+    <div class="container yes-container" id="yes-screen">
+        <h1>ya sabia que ibas a decir que si</h1>
+        <div class="gif-container">
+          <img id="yes-gif" src="https://valeveig.github.io/cita/sticker_15.webp" alt="gatitos"
+              style="width:220px;height:220px;object-fit:contain;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3));">
+        </div>
+        <p class="yes-message">yay!!! 🎉🎉🎉</p>
+    </div>
+
+    <audio id="bg-music" loop autoplay muted>
+        <source src="https://files.catbox.moe/dd8fu2.mp3" type="audio/mpeg">    </audio>
+    <button id="music-toggle" onclick="toggleMusic()" title="musica">🔊</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
